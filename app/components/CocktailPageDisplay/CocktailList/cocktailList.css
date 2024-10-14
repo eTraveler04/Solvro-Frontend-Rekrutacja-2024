@@ -1,0 +1,39 @@
+/* components/CocktailList/cocktailList.css */
+.div_cocktail_list {
+  margin: 60px 40px 0 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  max-height: 90vh;
+  overflow-y: auto;
+  width: 95%;
+}
+
+.cocktail-card {
+  color: var(--color-white);
+  padding: 5px;
+  text-align: center;
+  margin-bottom: 3px;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s; /* Dodanie płynnego przejścia */
+}
+
+.cocktail-card.expanded {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.2
+  ); /* Zmiana tła dla klikniętego koktajlu */
+  transform: scale(1.02); /* Delikatne powiększenie */
+}
+
+.cocktail-card:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.filtr_btn {
+  color: white;
+}

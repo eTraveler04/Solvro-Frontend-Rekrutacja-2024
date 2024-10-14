@@ -1,0 +1,49 @@
+:root {
+  --color-white: #ffffff;
+  --color-light-blue: #d9e8ff;
+  --color-medium-blue: #80b3ff;
+  --color-blue: #6583c8;
+  --color-dark-blue: #274276;
+  --color-deep-blue: #203560;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.show_box {
+  flex: 1;
+  background-color: var(--color-dark-blue);
+  height: 100vh;
+  padding-left: 20px;
+  background-size: cover; /* Możesz zmienić na 'contain' lub '200px 100px' */
+
+  /* background-image: url('images/logo.png'); */
+}
+
+p {
+  color: var(--color-white);
+}
+
+h1 {
+  font-size: 36px;
+  color: #203560;
+  margin: 10px 0 20px 0;
+}
+
+.div_list_details {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+}
+
+.div_button_filter {
+}

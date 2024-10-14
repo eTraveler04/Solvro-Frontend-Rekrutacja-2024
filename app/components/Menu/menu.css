@@ -1,0 +1,42 @@
+.menu_btn {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 100vh;
+  width: 320px;
+  background-color: var(--color-white);
+  border: none;
+  border-right: 5px solid var(--color-blue);
+}
+.img_menu_logo {
+  width: 150px;
+  height: 150px;
+  margin: 10px 0 10px 0;
+}
+.menu p {
+  /* display: inline-block; */
+  color: var(--color-deep-blue);
+  font-size: 24px;
+}
+.menu_buttons div {
+  display: flex;
+  align-self: center;
+  justify-content: start;
+  width: 270px;
+  border-bottom: 3px solid var(--color-blue);
+  padding: 15px 15px 0 15px;
+}
+.menu_buttons div:hover {
+  border-bottom: 3px solid var(--color-medium-blue);
+}
+
+.img_star {
+  height: 20px;
+  width: 20px;
+}
