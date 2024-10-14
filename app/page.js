@@ -12,7 +12,7 @@ import {
   useFavorites,
 } from './components/FavoriteCocktailArray'; // Importowanie provider i hooka
 
-// Importy stylów (jeśli potrzebujesz)
+// Importy stylów 
 import './components/Menu/menu.css';
 import './components/Showcase/showcase.css';
 import './components/CocktailPageDisplay/CocktailList/cocktailList.css';

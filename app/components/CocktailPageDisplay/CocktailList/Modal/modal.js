@@ -32,18 +32,14 @@ export default function Modal({
   useEffect(() => {
     const fetchIngredients = async () => {
       try {
-        // Pobieramy składniki koktajlu za pomocą jego ID
         const Ingredients = await getIngredientsById(cocktail.id);
-
-        // Zakładam, że Ingredients zawiera tablicę składników
         const fetchedIngredients = Ingredients.ingredients.map(
           (ingredient) => ingredient.name
         );
-
         // Zapisujemy nazwy składników w stanie
         setIngredientNames(fetchedIngredients);
       } catch (err) {
-        setError(err.message); // Obsługa błędów
+        setError(err.message); 
       }
     };
 
@@ -69,7 +65,7 @@ export default function Modal({
     setIsFavorite(!isFavorite);
   };
 
-  if (error) return <div>Error: {error}</div>; // Wyświetlenie błędu, jeśli wystąpił
+  if (error) return <div>Error: {error}</div>; 
 
   return (
     <div className="modal-overlay">
